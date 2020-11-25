@@ -1,0 +1,16 @@
+{
+  "name": "simon-game",
+  "version": "1.0.0",
+  "description": "Simon Game",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Sarah Baldin",
+  "license": "ISC"
+}
