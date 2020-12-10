@@ -21,14 +21,15 @@
 
 
     <!-- SPIELFLÄCHE -->
-    <h1 id="level-title">
+    <h1 id="game-name">Simon Game</h1>
+    <h2 id="level-title">
       Taste drücken um Spiel zu starten
       <p class="info">
         <button class="fa-btn myModal" data-toggle="modal" data-target="#myModal">
           <i class="far fa-question-circle faIcon"></i>
         </button>
       </p>
-    </h1>
+    </h2>
     <div class="col-12">
       <div class="row justify-content-center">
         <div class="col-6">
@@ -56,7 +57,7 @@
       <p id="highscore">Highscore: <span id="highscoreNumber"></span></p>
     </div>
     <div class="row">
-      <button class="game-btn btn btn-large btn-success"><i class="fas fa-gamepad game-icon"></i> START!</button>
+      <button id="start-btn" class="game-btn btn btn-large btn-success"><i class="fas fa-gamepad game-icon"></i> START!</button>
     </div>
 
   </div>
@@ -86,8 +87,8 @@
 			startet das Spiel und es ertönt ein Sound und die dazugehörige Farbe wird angezeigt. 
 			Klicken Sie nun auf die gerade
 			angezeigte Farbe, landen Sie in der nächsten Runde. Dort wird eine
-			zweite Farbe mit dem dazugehörigen Sound abgespielt. <br />
-			Sie müssen nun zuuerst
+			zweite Farbe mit dem dazugehörigen Sound abgespielt. <br /><br />
+			Sie müssen nun zuerst
 			die Farbe aus der ersten Runde anklicken und danach die Farbe, die
 			Sie gerade gesehen haben. So geht es nun immer weiter. Prägen Sie
 			sich die gesamte Farb-/Sound-Folge genau ein und klicken Sie dann am Ende die
@@ -96,7 +97,7 @@
 			viele Farb-/Sound-Kombinationen können Sie sich merken? Ihr
 			Highscore wird lokal in Ihrem Browser gespeichert und Sie können
 			so immer wieder versuchen, ihren alten Highscore zu knacken. </p>
-			<h4>
+			<h4 style="text-align:ceenter">
 			Viel Erfolg!
 			</h4>
         </div>
