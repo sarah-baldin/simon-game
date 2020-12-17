@@ -98,6 +98,25 @@ body {
   background-color: grey;
 }
 
+  /* Footer Styles */
+footer {
+    padding-top: 15px;
+    position: fixed;
+    bottom: 10px;
+    height: 5vh;
+    width: 100%;
+    text-align: center; 
+  }
+  
+  .siteFooter a, .siteFooter p {
+    color: #FEF2BF;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .siteFooter a:hover {
+    color: #7000f0;
+  }
 
 
 @media screen and (max-height: 1000px) {
