@@ -5,51 +5,43 @@ body {
 }
 
 
-#game-name {
+h1 {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
-  margin-top: 3%;
-  font-size: 4rem;
+  margin-top: 4%;
+  font-size: 3rem;
   color: #7000f0;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
-  margin-bottom: 3%;
-  font-size: 2.5rem;
-  color: #FEF2BF;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #bdbdbd;
 }
 
 #highscore {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin:  2% auto 0;
-  color: #FEF2BF;
-}
-
-
-.button {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  margin: 2% auto 0;
+  color: #7000f0;
 }
 
 .info {
-  margin: 10px auto;
+  margin: 5px auto 0;
+  text-align: center;
+  
 }
 
 .fa-btn {
-  position: absolute;
+  position: relative;
   background-color: transparent; 
   border: none; 
-  width: 30px;
-  height: 30px;
-  color: #FEF2BF; 
-  font-size: 30px; 
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #e4e4e4;
+  font-size: 1.5rem; 
   cursor: pointer; 
 }
 
@@ -59,10 +51,46 @@ body {
   left: 0;
 }
 
+.game-button-wrapper {
+  width: 90vw;
+  max-width: 50vh;
+  height: 90vw;
+  max-height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  bottom:5%;
+}
+
+.button {
+  height: 40%;
+  width: 40%;
+  border: 5px solid #444444ad; 
+  border-radius: 20%;
+  margin: auto;
+}
+
 .game-btn {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
   margin: 20px auto;
+  color: #e4e4e4;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
 }
 
 .game-icon {
@@ -74,101 +102,75 @@ body {
   opacity: 0.8;
 }
 
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-  float: right;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-  float: right;
-
-}
-
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
 
   /* Footer Styles */
-footer {
-    padding-top: 15px;
+  .simon-footer {
     position: fixed;
-    bottom: 10px;
-    height: 5vh;
+    bottom: 0;
+    height: 3vh;
     width: 100%;
+    margin: 1% auto;
     text-align: center; 
   }
+
+  #copyright {
+    font-size: 1rem;
+    color: #bdbdbd; 
+  }
+
+  @media screen and (min-height: 1081px) and (orientation: landscape) {
+    h1 {
+      font-size: 4rem;
+    }
   
-  .siteFooter a, .siteFooter p {
-    color: #FEF2BF;
-    display: inline-block;
-    padding: 10px;
+    .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+      font-size: 2rem;
+    }
   }
 
-  .siteFooter a:hover {
-    color: #7000f0;
+@media screen and (min-height: 1441px) and (orientation: landscape) {
+  h1 {
+    font-size: 5rem;
   }
-
-
-@media screen and (max-height: 1000px) {
-  .button {
-    height: 150px;
-    width: 150px;
- 
+  
+  .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 3.5rem;
   }
+}
 
-  #level-title {
+
+@media screen and (max-height: 970px) and (orientation: landscape) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-height: 1080px) and (orientation: portrait) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+.game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 840px) and (orientation: portrait) {
+  h1 {
     font-size: 2rem;
-    margin-bottom: 2%;
   }
   
-  #highscore {
-    font-size: 2em;
-    margin: 1% auto;
-  }
-
-  .game-btn {
-    margin: 10px auto;
+  .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 1.2rem;
   }
 }
 
-
-@media screen and (max-width: 500px) {
-  .button {
-    height: 115px;
-    width: 115px;
-  }
-
-  #level-title {
-    font-size: 1.5rem;
-    margin: 15% 0 7%;
-  }
-  
-  #highscore {
-    font-size: 1.5rem;
-    margin: 5% auto;
-  }
-
-  .fa-btn {
-    width: 20px;
-    height: 20px;
-    font-size: 20px; 
-  }
-
-  .game-btn {
-    font-size: 1.5rem;
-  }
-  
-  .game-icon {
-    font-size: 2rem
-  }
-}

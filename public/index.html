@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charset="utf-8" />
-		<title>Simon Game</title>
+		<title>SIMON GAME</title>
 
 		<link
 			rel="stylesheet"
@@ -29,10 +29,10 @@
 			<div class="row">
 				<div class="col-12">
 					<!-- SPIELFLÄCHE -->
-					<h1 id="game-name">Simon Game</h1>
-					<h2 id="level-title">
+					<h1 id="game-name">SIMON GAME</h1>
+					<p id="level-title">
 						Taste drücken um Spiel zu starten
-						<p class="info">
+						<div class="info">
 							<button
 								class="fa-btn myModal"
 								data-toggle="modal"
@@ -40,28 +40,19 @@
 							>
 								<i class="far fa-question-circle faIcon"></i>
 							</button>
-						</p>
-          </h2>
-    
-					<div class="col-12">
-						<div class="row justify-content-center">
-							<div class="col-6">
-								<div type="button" id="green" class="button green"></div>
-							</div>
-							<div class="col-6">
-								<div type="button" id="red" class="button red"></div>
-							</div>
 						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-6">
+          			</p>
+					<div class="row">
+						<div class="col-12">
+							<div class="game-button-wrapper">
+								<div type="button" id="green" class="button green"></div>
+								<div type="button" id="red" class="button red"></div>
 								<div type="button" id="yellow" class="button yellow"></div>
-							</div>
-							<div class="col-6">
 								<div type="button" id="blue" class="button blue"></div>
 							</div>
 						</div>
 					</div>
+					
 
 					<div class="row">
 						<p id="highscore">Highscore: <span id="highscoreNumber"></span></p>
@@ -131,15 +122,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<footer class="siteFooter">
-						<a href="https://ausbildung-fiae.herokuapp.com/impressum" class="siteFooter-content">Impressum</a>
-						<p class="siteFooter-copyright"> Copyright by Sarah Baldin ⓒ 2020 </p>
-						<a href="https://ausbildung-fiae.herokuapp.com/datenschutz" class="siteFooter-content">Datenschutzerklärung</a>
-					</footer>
-				</div>
+				<footer class="simon-footer">
+					<p id="copyright"> Copyright by Sarah Baldin ⓒ 2020 </p>
+				</footer>
 			</div>
 		</div>
 

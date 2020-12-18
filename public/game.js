@@ -97,7 +97,7 @@ function endGame() {
 	playSound("wrong");
 	
 	$("body").addClass("game-over");
-	$("#level-title").text("Game Over, Taste drücken um neu zu starten!");
+	$("#level-title").text("Game Over! Taste drücken um neu zu starten!");
 	
 	setTimeout(function () {
 		$("body").removeClass("game-over");
