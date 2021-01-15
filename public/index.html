@@ -89,21 +89,21 @@
 								</p>
 								<h4>Spielablauf:</h4>
 								<p>
-									Nach einem klick auf den Start Button oder einer Taste auf
+									Nach einem Klick auf den Start-Button oder einer Taste auf
 									ihrem Keyboard, startet das Spiel und es ertönt ein Sound und
-									die dazugehörige Farbe wird angezeigt. Klicken Sie nun auf die
-									gerade angezeigte Farbe, landen Sie in der nächsten Runde.
+									die dazugehörige Farbe blinkt auf. Klicken Sie nun auf die
+									grade angezeigte Farbe, landen Sie in der nächsten Runde.
 									Dort wird eine zweite Farbe mit dem dazugehörigen Sound
 									abgespielt. <br /><br />
 									Sie müssen nun zuerst die Farbe aus der ersten Runde anklicken
-									und danach die Farbe, die Sie gerade gesehen haben. So geht es
+									und danach die Farbe, die Sie grade gesehen haben. So geht es
 									nun immer weiter. Prägen Sie sich die gesamte
 									Farb-/Sound-Folge genau ein und klicken Sie dann am Ende die
 									zuletzt gesehene Farbe an. Im Laufe des Spiels wird es immer
 									schwieriger und in jeder Runde steigt die Spannung weiter an.
 									Wie viele Farb-/Sound-Kombinationen können Sie sich merken?
 									Ihr Highscore wird lokal in Ihrem Browser gespeichert und Sie
-									können so immer wieder versuchen, ihren alten Highscore zu
+									können so immer wieder versuchen, Ihren alten Highscore zu
 									knacken.
 								</p>
 								<h4 style="text-align: ceenter">Viel Erfolg!</h4>
@@ -123,11 +123,14 @@
 					</div>
 				</div>
 				<footer class="simon-footer">
-					<p id="copyright"> Copyright by Sarah Baldin ⓒ 2020 </p>
+					<p id="copyright"> Copyright by Sarah Baldin ⓒ <span id="year"></span> </p>
 				</footer>
 			</div>
 		</div>
-
+		<script type="text/javascript">
+			  const year = new Date().getFullYear();
+			  document.getElementById("year").innerText = year;
+		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
