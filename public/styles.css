@@ -68,6 +68,10 @@ h1 {
   margin: auto;
 }
 
+[type=button] {
+  -webkit-appearance: initial;
+}
+
 .red {
   background-color: red;
 }
@@ -105,31 +109,31 @@ h1 {
   font-size: 2.5rem
 }
 
-  /* Footer Styles */
-  .simon-footer {
-    position: fixed;
-    bottom: 0;
-    height: 3vh;
-    width: 100%;
-    margin: 1% auto;
-    text-align: center; 
+/* Footer Styles */
+.simon-footer {
+  position: fixed;
+  bottom: 0;
+  height: 3vh;
+  width: 100%;
+  margin: 1% auto;
+  text-align: center; 
+}
+
+#copyright {
+  font-size: 1rem;
+  color: #bdbdbd; 
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-height: 1081px) and (orientation: landscape) {
+  h1 {
+    font-size: 4rem;
   }
 
-  #copyright {
-    font-size: 1rem;
-    color: #bdbdbd; 
+  .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 2rem;
   }
-
-  /* MEDIA QUERIES */
-  @media screen and (min-height: 1081px) and (orientation: landscape) {
-    h1 {
-      font-size: 4rem;
-    }
-  
-    .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
-      font-size: 2rem;
-    }
-  }
+}
 
 @media screen and (min-height: 1441px) and (orientation: landscape) {
   h1 {

@@ -6,7 +6,7 @@ let gamePattern = [];
 let userClickedPattern = [];
 
 let buttonColours = ["green", "red", "yellow", "blue"];
-const highscoreElem = document.getElementById("highscoreNumber");
+let highscoreElem = document.getElementById("highscoreNumber");
 highscoreElem.innerText = getHighscore();
 
 function getHighscore() {
