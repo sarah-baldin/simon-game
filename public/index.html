@@ -26,7 +26,7 @@
 
 	<body>
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row simon-content">
 				<div class="col-12">
 					<!-- SPIELFLÄCHE -->
 					<h1 id="game-name">SIMON GAME</h1>
@@ -122,11 +122,16 @@
 						</div>
 					</div>
 				</div>
-				<footer class="simon-footer">
-					<p id="copyright"> Copyright by Sarah Baldin ⓒ <span id="year"></span> </p>
-				</footer>
 			</div>
+			<div class="row">
+				<div class="col-12">
+					<footer class="simon-footer">
+						<p id="copyright"> Copyright by Sarah Baldin ⓒ <span id="year"></span> </p>
+					</footer>
+				</div>
+			</div>	
 		</div>
+
 		<script type="text/javascript">
 			  const year = new Date().getFullYear();
 			  document.getElementById("year").innerText = year;

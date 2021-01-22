@@ -12,6 +12,11 @@ h1 {
   color: #7000f0;
 }
 
+.simon-content {
+  height: 97vh;
+  width: 100vw; 
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
@@ -46,6 +51,8 @@ h1 {
 .faIcon {
   position: absolute;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
 }
 
@@ -63,7 +70,8 @@ h1 {
 .button {
   height: 40%;
   width: 40%;
-  border: 5px solid #444444ad; 
+  border: 5px solid; 
+  border-color:rgba(68, 68, 68, 0.6);
   border-radius: 20%;
   margin: auto;
 }
@@ -113,6 +121,7 @@ h1 {
 .simon-footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   height: 3vh;
   width: 100%;
   margin: 1% auto;
@@ -127,7 +136,7 @@ h1 {
 /* MEDIA QUERIES */
 @media screen and (min-height: 1081px) and (orientation: landscape) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
@@ -137,33 +146,22 @@ h1 {
 
 @media screen and (min-height: 1441px) and (orientation: landscape) {
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   
   .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
 
-@media screen and (max-height: 970px) and (orientation: landscape) {
+@media screen and (max-height: 1080px) and (orientation: landscape) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media screen and (max-height: 1080px) and (orientation: portrait) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-.game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -177,3 +175,21 @@ h1 {
   }
 }
 
+@media screen and (max-width: 350px) and (orientation: portrait) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .game-btn, #highscore, #level-title, .info, .game-icon, .faIcon {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    border: 3px solid;
+    border-color:rgba(68, 68, 68, 0.6);
+  }
+
+  #copyright {
+    font-size: 0.7rem;
+  }
+}
