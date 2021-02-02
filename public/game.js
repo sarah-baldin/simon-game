@@ -90,7 +90,6 @@ function playAnimation(currentColour) {
 }
 
 function endGame() {
-	
 	(score - 1 > highscore) ? (highscore = score - 1) : highscore;
 	highscoreElem.innerText = highscore;
 	localStorage.setItem("Highscore", highscore);
@@ -101,9 +100,8 @@ function endGame() {
 	
 	setTimeout(function () {
 		$("body").removeClass("game-over");
-	}, 300);
+	}, 200);
 	startOver();
-	
 }
 
 function startOver() {
