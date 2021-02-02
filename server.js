@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8081;
 
 app.use(express.static("public"));
 
@@ -9,6 +9,6 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Simon App listening at ${port}`);
+  console.log(`Simon Game listening at ${port}`);
 });
 

@@ -49,7 +49,7 @@ function checkAnswer(currentLevel) {
 		if (userClickedPattern.length === gamePattern.length) {
 			setTimeout(function () {
 				nextSequence();
-			}, 1000);
+			}, 700);
 		}
 	} else {
 		endGame();
@@ -101,7 +101,7 @@ function endGame() {
 	
 	setTimeout(function () {
 		$("body").removeClass("game-over");
-	}, 200);
+	}, 300);
 	startOver();
 	
 }
