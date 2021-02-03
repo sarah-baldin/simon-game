@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="de" dir="ltr">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charset="utf-8" />
+		<base href="/simon-game" />
 		<title>SIMON GAME</title>
-
+		<link rel="shortcut icon" type="image/png" href="simon_ico.png"/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -25,7 +26,7 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid simon-div">
 			<div class="row simon-content">
 				<div class="col-12">
 					<!-- SPIELFLÄCHE -->
@@ -66,9 +67,7 @@
 
 				<!-- Spielanleitung -->
 				<div class="modal fade" id="myModal">
-					<div
-						class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-					>
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<!-- Modal Header -->
 							<div class="modal-header">
@@ -106,7 +105,7 @@
 									kannst so immer wieder versuchen, den bisherigen Highscore zu
 									knacken.
 								</p>
-								<h4 style="text-align: ceenter">Viel Erfolg!</h4>
+								<h4 style="text-align: center">Viel Erfolg!</h4>
 							</div>
 
 							<!-- Modal footer -->
@@ -126,7 +125,9 @@
 			<div class="row">
 				<div class="col-12">
 					<footer class="simon-footer">
+						<a href="https://www.azubi.codes/#portfolio">zurück zum Portfolio</a>
 						<p id="copyright"> Copyright by Sarah Baldin ⓒ <span id="year"></span> </p>
+						<a href="https://www.azubi.codes/impressum">Impressum</a>
 					</footer>
 				</div>
 			</div>	

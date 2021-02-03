@@ -26,11 +26,11 @@ function startGame() {
 	}
 }
 
-$(document).keydown(startGame);
-$(".game-btn").click(startGame);
+$(document).on("keydown", startGame);
+$(".game-btn").on("click", startGame);
 
 
-$(".button").click(function () {
+$(".button").on("click", function () {
   if (!started) {
 
   } else {
@@ -86,7 +86,7 @@ function playAnimation(currentColour) {
 	$("#" + currentColour).addClass("pressed");
 	setTimeout(function () {
 		$("#" + currentColour).removeClass("pressed");
-	}, 100);
+	}, 150);
 }
 
 function endGame() {
